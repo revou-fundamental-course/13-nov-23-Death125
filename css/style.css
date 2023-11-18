@@ -1,0 +1,58 @@
+/* MARK HEADER */
+
+.navigation-header {
+  /* Flex default directionnya row */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: min-content;
+}
+
+.navigation {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.title-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* MARK MAIN */
+
+#main-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.review-section {
+  flex-basis: 60%;
+  flex-grow: 0;
+}
+
+.review-section img {
+  max-width: 100%;
+  max-height: 50%;
+}
+
+.message-us {
+  flex-basis: 40%;
+  flex-grow: 0;
+  background-color: aliceblue;
+  border-radius: 8px;
+}
+
+.input-message-us {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  margin-left: 24px;
+}
