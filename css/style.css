@@ -1,7 +1,6 @@
 /* MARK HEADER */
 
 .navigation-header {
-  /* Flex default directionnya row */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,24 +10,55 @@
 .navigation {
   display: flex;
   gap: 10px;
+  padding: 5px 10px;
+  border: 1px solid rgb(61, 59, 59);
+  border-radius: 5px;
 }
 
 .navigation a {
   text-decoration: none;
+  color: black;
 }
 
+.logo {
+  filter: saturate(0%) brightness(0%);
+  margin-left: 50px;
+}
+
+hr {
+  display: block;
+  height: 0.5px;
+  border: 0 none;
+  border-top: 1px solid #ccc;
+  overflow: visible;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 .title-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+}
+
+#title-motto {
+  font-weight: lighter;
+  color: #a2acb4;
 }
 
 /* MARK MAIN */
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 
 #main-section {
   display: flex;
   flex-direction: row;
+  align-items: start;
   gap: 20px;
 }
 
@@ -37,22 +67,71 @@
   flex-grow: 0;
 }
 
-.review-section img {
+.slider img {
   max-width: 100%;
   max-height: 50%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.slider {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 20px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+q {
+  font-style: italic;
+  color: rgb(166, 182, 190);
+  margin-left: 30px;
+}
+
+.review-profile {
+  display: flex;
+  align-content: flex-end;
+  margin: 20px 30px;
+}
+
+.review-profile div em {
+  color: rgb(176, 187, 189);
 }
 
 .message-us {
-  flex-basis: 40%;
+  flex-basis: 45%;
   flex-grow: 0;
-  background-color: aliceblue;
+  background-color: rgb(233, 236, 240);
   border-radius: 8px;
+  padding: 12px 25px;
+}
+
+.form-header {
+  margin: 20px 25px;
 }
 
 .input-message-us {
   display: flex;
   flex-direction: column;
+  margin: 20px 25px;
 }
-button {
-  margin-left: 24px;
+
+.send-button {
+  background-color: black;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 14px 0px;
+  border-radius: 6px;
+}
+
+.text-input {
+  padding: 10px;
+}
+
+select option:disabled {
+  color: blue;
+  font-weight: bold;
+}
+
+h5 {
+  color: grey;
+  font-weight: 200;
 }
