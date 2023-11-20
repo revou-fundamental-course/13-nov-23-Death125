@@ -53,17 +53,20 @@ hr {
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #main-section {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   gap: 20px;
+  flex-flow: row wrap;
 }
 
 .review-section {
-  flex-basis: 60%;
+  flex-basis: 57%;
   flex-grow: 0;
 }
 
@@ -75,18 +78,19 @@ body {
 }
 
 .slider {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 20px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 10px -10px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -20px;
 }
 
-q {
+.review-message {
   font-style: italic;
-  color: rgb(166, 182, 190);
-  margin-left: 30px;
+  color: rgb(174, 189, 196);
+  margin: 15px 20px;
 }
 
 .review-profile {
   display: flex;
+  gap: 30px;
   align-content: flex-end;
   margin: 20px 30px;
 }
@@ -95,8 +99,13 @@ q {
   color: rgb(176, 187, 189);
 }
 
+.review-benefit {
+  text-align: justify;
+  margin: 5px 30px;
+}
+
 .message-us {
-  flex-basis: 45%;
+  flex-basis: 35%;
   flex-grow: 0;
   background-color: rgb(233, 236, 240);
   border-radius: 8px;
@@ -105,6 +114,11 @@ q {
 
 .form-header {
   margin: 20px 25px;
+}
+
+h5 {
+  color: grey;
+  font-weight: 200;
 }
 
 .input-message-us {
@@ -131,7 +145,43 @@ select option:disabled {
   font-weight: bold;
 }
 
-h5 {
-  color: grey;
-  font-weight: 200;
+#package-title {
+  justify-content: center;
+  background-color: rgb(233, 236, 240);
+  text-align: center;
+  height: 50%;
+  line-height: 100px;
+  width: 100%;
+  margin: 0 -500%;
+  padding: 0 500% !important;
+}
+
+.package {
+  display: flex;
+  flex-direction: row;
+}
+
+/* MARK FOOTER */
+#footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call-button {
+  background-color: black;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 3px;
+  width: 200px;
+  height: 50px;
+  margin: 20px 0px 50px 0px;
+}
+
+.service-policy {
+  display: flex;
+  flex-direction: row;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  gap: 20px;
 }
