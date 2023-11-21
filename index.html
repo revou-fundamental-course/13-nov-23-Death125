@@ -52,7 +52,9 @@
                     <em>
                         <p>Housewife, 28</p>
                     </em>
+                    <hr>
                 </div>
+
             </div>
 
             <div class="review-benefit">
@@ -73,23 +75,27 @@
                 <h5>Sales will contact you 1x24 hours after we receive the data</h5>
                 <br>
             </div>
-            <form class="input-message-us">
+            <form action="#" class="input-message-us" name="form-input" onsubmit="return validateForm()">
                 <label>Your Name:</label>
-                <input class="text-input" id="name-input" type="text" placeholder="First and Last Name">
+                <input class="text-input" id="name-input" type="text" placeholder="First and Last Name"
+                    name="name-input">
+                <h6 id="error-name"></h6>
                 <br>
                 <label>Email Address:</label>
-                <input class="text-input" id="email-input" type="email" placeholder="example@gmail.com">
+                <input class="text-input" id="email-input" type="email" placeholder="example@gmail.com"
+                    name="email-input">
+                <h6 id="error-email"></h6>
                 <br>
                 <label>What are you interested in?</label>
-                <select class="text-input">
-                    <option disabled selected hidden>Select option</option>
+                <select class="text-input" name="select-input">
+                    <option disabled selected id="error-select" hidden value="">Select option</option>
                     <option value="Software Engineering">Software Engineering</option>
                     <option value="Graphic Designer">Graphic Designer</option>
                     <option value="Motion Graphic">Motion Graphic</option>
                     <option value="DevOps Engineer">DevOps Engineer</option>
                 </select>
                 <br>
-                <button type="button" class="send-button">SEND</button>
+                <button type="submit" class="send-button" value="submit">SEND</button>
             </form>
         </section>
 
@@ -99,17 +105,35 @@
 
         <section class="package">
             <div>
-                <ol>
-                    <li>
-                        Bali
-                    </li>
-                    <li>
-                        Japan
-                    </li>
-                    <li>
-                        Singapore
-                    </li>
-                </ol>
+                <img class="package-img" src="assets/Light.gif">
+                <h3>Bali</h3>
+                <p>travel and tourism in Bali, visit cultural heritage sites and interesting culinary delights</p>
+            </div>
+            <div>
+                <img class="package-img" src="assets/Light.gif">
+                <h3>Japan</h3>
+                <p>travel and tourism in Japan, visit cultural heritage sites and interesting culinary delights</p>
+            </div>
+            <div>
+                <img class="package-img" src="assets/Light.gif">
+                <h3>Singapore</h3>
+                <p>travel and tourism in Singapore, visit cultural heritage sites and interesting culinary delights</p>
+            </div>
+
+            <div>
+                <img class="package-img" src="assets/Light.gif">
+                <h3>Bandung</h3>
+                <p>travel and tourism in Bandung, visit cultural heritage sites and interesting culinary delights</p>
+            </div>
+            <div>
+                <img class="package-img" src="assets/Light.gif">
+                <h3>Surabaya</h3>
+                <p>travel and tourism in Surabaya, visit cultural heritage sites and interesting culinary delights</p>
+            </div>
+            <div>
+                <img class="package-img" src="assets/Light.gif">
+                <h3>Amerika</h3>
+                <p>travel and tourism in Amerika, visit cultural heritage sites and interesting culinary delights</p>
             </div>
         </section>
         <hr>

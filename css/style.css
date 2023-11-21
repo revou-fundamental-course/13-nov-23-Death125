@@ -26,15 +26,14 @@
 }
 
 hr {
-  display: block;
   height: 0.5px;
   border: 0 none;
   border-top: 1px solid #ccc;
-  overflow: visible;
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
+
 .title-header {
   display: flex;
   flex-direction: column;
@@ -60,6 +59,7 @@ body {
 #main-section {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
   flex-flow: row wrap;
@@ -73,7 +73,6 @@ body {
 .slider img {
   max-width: 100%;
   max-height: 50%;
-  object-fit: contain;
   border-radius: 8px;
 }
 
@@ -101,6 +100,7 @@ body {
 
 .review-benefit {
   text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 5px 30px;
 }
 
@@ -136,6 +136,11 @@ h5 {
   border-radius: 6px;
 }
 
+.send-button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
 .text-input {
   padding: 10px;
 }
@@ -146,19 +151,29 @@ select option:disabled {
 }
 
 #package-title {
-  justify-content: center;
   background-color: rgb(233, 236, 240);
   text-align: center;
   height: 50%;
   line-height: 100px;
   width: 100%;
-  margin: 0 -500%;
-  padding: 0 500% !important;
 }
 
 .package {
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
+}
+
+.package-img {
+  width: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+}
+
+h6 {
+  margin: 0px;
+  margin-top: 5px;
 }
 
 /* MARK FOOTER */
@@ -177,6 +192,11 @@ select option:disabled {
   width: 200px;
   height: 50px;
   margin: 20px 0px 50px 0px;
+}
+
+.call-button:hover {
+  background-color: blue;
+  cursor: pointer;
 }
 
 .service-policy {
