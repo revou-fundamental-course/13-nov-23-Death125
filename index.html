@@ -14,9 +14,11 @@
         <section class="navigation-header">
             <a href=""><img class="logo" src="assets/moqups-logo.png"></a>
             <nav class="navigation">
-                <a href="#header-section">Home</a>
-                <a href="#package-title">Our Package</a>
-                <a href="#footer-section">Call Us</a>
+                <ul>
+                    <li> <a href="#header-section">Home</a></li>
+                    <li> <a href="#package-title">Our Package</a></li>
+                    <li> <a href="#footer-section">Call Us</a></li>
+                </ul>
             </nav>
         </section>
         <hr>
@@ -75,7 +77,7 @@
                 <h5>Sales will contact you 1x24 hours after we receive the data</h5>
                 <br>
             </div>
-            <form action="#" class="input-message-us" name="form-input" onsubmit="return validateForm()">
+            <form class="input-message-us" name="form-input" onsubmit="return validateForm()">
                 <label>Your Name:</label>
                 <input class="text-input" id="name-input" type="text" placeholder="First and Last Name"
                     name="name-input">
@@ -88,12 +90,13 @@
                 <br>
                 <label>What are you interested in?</label>
                 <select class="text-input" name="select-input">
-                    <option disabled selected id="error-select" hidden value="">Select option</option>
+                    <option disabled selected id="default-select" hidden value="">Select option</option>
                     <option value="Software Engineering">Software Engineering</option>
                     <option value="Graphic Designer">Graphic Designer</option>
                     <option value="Motion Graphic">Motion Graphic</option>
                     <option value="DevOps Engineer">DevOps Engineer</option>
                 </select>
+                <h6 id="error-select"></h6>
                 <br>
                 <button type="submit" class="send-button" value="submit">SEND</button>
             </form>
@@ -104,37 +107,38 @@
         </section>
 
         <section class="package">
-            <div>
-                <img class="package-img" src="assets/Light.gif">
-                <h3>Bali</h3>
-                <p>travel and tourism in Bali, visit cultural heritage sites and interesting culinary delights</p>
-            </div>
-            <div>
-                <img class="package-img" src="assets/Light.gif">
-                <h3>Japan</h3>
-                <p>travel and tourism in Japan, visit cultural heritage sites and interesting culinary delights</p>
-            </div>
-            <div>
-                <img class="package-img" src="assets/Light.gif">
-                <h3>Singapore</h3>
-                <p>travel and tourism in Singapore, visit cultural heritage sites and interesting culinary delights</p>
-            </div>
-
-            <div>
-                <img class="package-img" src="assets/Light.gif">
-                <h3>Bandung</h3>
-                <p>travel and tourism in Bandung, visit cultural heritage sites and interesting culinary delights</p>
-            </div>
-            <div>
-                <img class="package-img" src="assets/Light.gif">
-                <h3>Surabaya</h3>
-                <p>travel and tourism in Surabaya, visit cultural heritage sites and interesting culinary delights</p>
-            </div>
-            <div>
-                <img class="package-img" src="assets/Light.gif">
-                <h3>Amerika</h3>
-                <p>travel and tourism in Amerika, visit cultural heritage sites and interesting culinary delights</p>
-            </div>
+            <ul>
+                <li>
+                    <img class="package-img" src="assets/Light.png">
+                    <span><strong>Bali</strong></span>
+                    <p>travel and tourism in Bali, visit cultural heritage sites
+                </li>
+                <li><img class="package-img" src="assets/Light.png">
+                    <span><strong>Japan</strong></span>
+                    <p>travel and tourism in Japan, visit cultural heritage
+                </li>
+                <li> <img class="package-img" src="assets/Light.png">
+                    <span><strong>Singapore</strong></span>
+                    <p>travel and tourism in Singapore, visit cultural heritage sites and interesting culinary delights
+                    </p>
+                </li>
+                <span style="margin: 100px 0px;"></span>
+                <li> <img class="package-img" src="assets/Star.png">
+                    <span><strong>Bandung</strong></span>
+                    <p>travel and tourism in Bandung, visit cultural heritage sites and interesting culinary delights
+                    </p>
+                </li>
+                <li><img class="package-img" src="assets/Star.png">
+                    <span><strong>Surabaya</strong></span>
+                    <p>travel and tourism in Surabaya, visit cultural heritage sites and interesting culinary delights
+                    </p>
+                </li>
+                <li><img class="package-img" src="assets/Star.png">
+                    <span><strong>Amerika</strong></span>
+                    <p>travel and tourism in Amerika, visit cultural heritage sites and interesting culinary delights
+                    </p>
+                </li>
+            </ul>
         </section>
         <hr>
     </main>

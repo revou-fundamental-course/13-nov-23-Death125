@@ -1,10 +1,12 @@
 var img = document.getElementById("img");
 
 var slides = [
-  "assets/Amerika.png",
-  "assets/China.png",
+  "assets/Bali.png",
   "assets/Japan.png",
-  "assets/Korea.png",
+  "assets/Singapore.png",
+  "assets/Bandung.png",
+  "assets/Surabaya.png",
+  "assets/Amerika.png",
 ];
 
 var Start = 0;
@@ -29,20 +31,23 @@ function validateForm() {
     document.getElementById("error-name").innerHTML = "Name cannot be empty";
     document.getElementById("error-name").style.color = "crimson";
   } else {
-    clearField();
+    document.getElementById("error-name").innerHTML = "";
   }
 
   if (email == "") {
     document.getElementById("error-email").innerHTML = "Email cannot be empty";
     document.getElementById("error-email").style.color = "crimson";
   } else {
-    clearField();
+    document.getElementById("error-email").innerHTML = "";
   }
 
   if (option == "") {
-    document.getElementById("error-select").innerHTML = "You must select one";
+    document.getElementById("error-select").innerHTML =
+      "Selection cannot be empty";
+    document.getElementById("error-select").style.color = "crimson";
   } else {
-    clearField();
+    document.getElementById("error-select").innerHTML = "";
+    document.getElementById("default-select").innerHTML = "Select Option";
   }
 
   return false;
@@ -50,6 +55,7 @@ function validateForm() {
 
 function clearField() {
   document.getElementById("error-name").innerHTML = "";
-  document.getElementById("error-email").innerHTML = "";
-  document.getElementById("error-select").innerHTML = "Select option";
+  document.getElementById("error-email").innerHTML;
+  document.getElementById("error-select").innerHTML = "";
+  document.getElementById("default-select").innerHTML = "Select Option";
 }
